@@ -3,11 +3,11 @@ What the number represents:
 
 
 Algorith for the puzzle solution:
-1. Get top 10(say) tweets of the person <=> get this count 
-2. Get the top 20 latest retweeters for the above 10 tweets
-3. Calculate the value for each user by multiplying their followers count with the number of retweets within the above 10 tweets
-4. Sort the users based on their value in descending order
-5. Get the top 10 users
+- Get top 10(say) tweets of the person <=> get this count 
+- Get the top 20 latest retweeters for the above 10 tweets
+- Calculate the value for each user by multiplying their followers count with the number of retweets within the above 10 tweets
+- Sort the users based on their value in descending order
+- Get the top 10 users
 
 Assumptions:
 	Pass the username and the number of tweets to take in URL as GET variables 'user' and 'count' respectively
