@@ -18,8 +18,6 @@ A Short Description:
  - This also works for all the handles given at http://puzzle.multunus.com/ parallelly
 
 
-Dependencies:
- - TwitterAPIExchange (https://github.com/J7mbo/twitter-api-php)
 
 Limits:
  - I still havenot found a way to bypass twitter's API limit
@@ -27,3 +25,11 @@ Limits:
  	- One solution to this is to store the json encoded string mentioned above in database/file and read the file, if the rate is exceeded. Then do a cronjob to cycle through all the handles. I guess this is what you have done in your puzzles page, which results in a small difference between the real-time solutions and the posted solutions.
  - While testing if you get 'Warning: Invalid argument supplied for foreach() in /home/redat675/public_html/multunus-twitter/TheNewTest.php on line 87', this just means that the API limit is exceeded and that the solution(if any) mentioned will be partial/incorrect. So, wait for maybe 10 minutes and try again.
  - **I have not implemented designed a UI for this, since I am basically a backend developer.**
+
+
+Changes:
+ - Reduced the rate limit by 5 times(by using application-only authentication)
+ - Implemnented cron job to further reduce rate limit
+ - Implemented a front-end file separately
+ - Improvement in the view(Now it is similar to that in puzzle.multunus.com)
+ - Removed dependency(TwitterAPIExchange.php)
