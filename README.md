@@ -33,3 +33,8 @@ Changes:
  - Implemented a front-end file separately
  - Improvement in the view(Now it is similar to that in puzzle.multunus.com)
  - Removed dependency(TwitterAPIExchange.php)
+
+Changes #2:
+- Implemented OOPs
+- Created model
+- Created a separate landing page
