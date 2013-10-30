@@ -1,0 +1,43 @@
+#container {
+position: fixed;
+width: 340px;
+height: 280px;
+top: 50%;
+left: 50%;
+margin-top: -140px;
+margin-left: -170px;
+}
+
+form {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+label {
+    color: #555;
+    display: inline-block;
+    margin-left: 18px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+input {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+input[type=text] {
+    color: #777;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 12px;
+    margin-left: 18px;
+    width: 290px;
+    height: 35px;
+}
+
+input[type=submit] {
+    margin-left: 18px;
+    font-size: 20px;
+}
