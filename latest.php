@@ -3,6 +3,8 @@
 require_once('classes.php');
 require_once('model.php');
 
+// $tempJSON = '[{"id":15953279,"tweet_id":0,"number_of_occurrences":1,"profile_image":"http:\/\/pbs.twimg.com\/profile_images\/378800000263740868\/197ba48d01afaaed807d9d87c6aaefc3.jpeg","count":3514,"screen_name":"danzelikman"},{"id":781314,"tweet_id":0,"number_of_occurrences":1,"profile_image":"http:\/\/pbs.twimg.com\/profile_images\/3091343815\/56a19b7d8c584a11ec83ad894b3a381b.jpeg","count":3024,"screen_name":"maggit"},{"id":7792422,"tweet_id":0,"number_of_occurrences":1,"profile_image":"http:\/\/pbs.twimg.com\/profile_images\/3415136442\/ab0ef05015eb2115695f90c0545573d5.jpeg","count":1653,"screen_name":"morganwarstler"},{"id":14341495,"tweet_id":0,"number_of_occurrences":1,"profile_image":"http:\/\/pbs.twimg.com\/profile_images\/3321641645\/e4eaa88679f1fcb6cfecb7151015e717.jpeg","count":1608,"screen_name":"adolfont"},{"id":14425176,"tweet_id":0,"number_of_occurrences":1,"profile_image":"http:\/\/pbs.twimg.com\/profile_images\/1587847275\/london.jpeg","count":1026,"screen_name":"inadarei"},{"id":582759042,"tweet_id":0,"number_of_occurrences":1,"profile_image":"http:\/\/pbs.twimg.com\/profile_images\/378800000213468042\/75383a2d34b24a04d5ddb8180a64f534.jpeg","count":959,"screen_name":"Autosports_Diva"},{"id":17188903,"tweet_id":0,"number_of_occurrences":1,"profile_image":"http:\/\/pbs.twimg.com\/profile_images\/68660467\/3130026223_caab2d1e6c.jpg","count":875,"screen_name":"evanchooly"},{"id":9887102,"tweet_id":0,"number_of_occurrences":1,"profile_image":"http:\/\/pbs.twimg.com\/profile_images\/1037442518\/recentphoto_big.jpg","count":852,"screen_name":"metaskills"},{"id":164016525,"tweet_id":0,"number_of_occurrences":1,"profile_image":"http:\/\/pbs.twimg.com\/profile_images\/3268927580\/15eba16aa10b6e5e66074fda1e504a34.jpeg","count":756,"screen_name":"adgerrits"},{"id":760557266,"tweet_id":0,"number_of_occurrences":1,"profile_image":"http:\/\/pbs.twimg.com\/profile_images\/378800000535123905\/2014eaab28a947010233c042a0bdc725.png","count":746,"screen_name":"screenheroapp"}]';
+
 $count = 10;
 
 if(isset($_POST)){
@@ -80,9 +82,13 @@ $top10 = array_slice($retweeters, 0, 10);
 
 $db->setJSON($handle, json_encode($top10));
 
+
+
+
 if($_POST){
   $data['users'] = $top10;
   $data['userImage'] = $user->profile_image;
+
   echo view("TwitterWheel.php", $data);
 }
 

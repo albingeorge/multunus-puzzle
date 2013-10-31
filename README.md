@@ -38,3 +38,4 @@ Changes #2:
 - Implemented OOPs
 - Created model
 - Created a separate landing page
+- Added cross browser compatibility
