@@ -19,8 +19,8 @@ label {
     margin-left: 18px;
     padding-top: 10px;
     font-size: 20px;
+    width: 100%;
 }
-
 
 input {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -28,14 +28,14 @@ input {
     outline: none;
 }
 input[type=text] {
-    color: #777;
-    padding-left: 10px;
-    margin: 10px;
+    /*padding-left: 10px;*/
+    /*margin: 10px;*/
     margin-top: 12px;
-    margin-left: 18px;
+    margin-bottom: 12px;
     width: 290px;
     height: 35px;
 }
+
 
 input[type=submit] {
     margin-left: 18px;

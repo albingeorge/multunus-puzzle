@@ -8,7 +8,11 @@ require_once('model.php');
 $count = 10;
 
 if(isset($_POST)){
-  $username = $_POST['username'];
+	$username = $_POST['username'];
+	if(!preg_match("/^[a-z_]+[a-zA-Z0-9_]+$/", $username)){
+		echo "Wrong username format!! </br> Please try again";
+		die();
+	}
 } else {
   $username = getUsername();
 }

@@ -39,3 +39,4 @@ Changes #2:
 - Created model
 - Created a separate landing page
 - Added cross browser compatibility
+- Validation added

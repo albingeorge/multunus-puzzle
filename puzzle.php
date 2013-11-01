@@ -14,7 +14,7 @@
    <div id="container">       
     <form action="latest.php" method="post">
       <label for="username">Screen Name:</label>
-      <input type="text" id="username" name="username">
+      &nbsp;@<input type="text" id="username" name="username">
       <div id="lower">
         <input type="submit" value="Submit">
       </div>
